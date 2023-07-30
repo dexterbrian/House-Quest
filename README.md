@@ -1,4 +1,4 @@
-# House Quest API
+# House Quest React App
 
 ## Introduction
 
