@@ -2,19 +2,21 @@
 
 ## Introduction
 
-This is a simple React frontend that uses a [Sinatra API](http://localhost:9292) to fetch house data for customers to search and view information on houses before deciding to physically visit the house in hopes of renting it.
+This is a simple React frontend that uses a Sinatra API to fetch house data for customers to search and view information on houses before deciding to physically visit the house in hopes of renting it.
 
 Here's a link to the [Sinatra Backend API Github Repo](https://github.com/dexterbrian/house-quest-api).
 
-Here's a link to the Deployed React Frontend:
+Here's a link to the deployed Sinatra Backend API: TO BE DEPLOYED
+<!-- [Deployed Sinatra Backend API](https://github.com/dexterbrian/house-quest). -->
+
+Here's a link to the Deployed React Frontend: TO BE DEPLOYED
 <!-- [Deployed React Frontend](https://github.com/dexterbrian/house-quest). -->
 
 ## Requirements
 
-For this project, you must have:
+For this project, you must have installed:
 
 - React
-- Node & npm
 
 ## Getting Started
 
