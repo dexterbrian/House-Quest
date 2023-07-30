@@ -48,3 +48,6 @@ You can start the React App with:
 ```console
 $ npm run dev
 ```
+
+### License
+[Review License](https://github.com/dexterbrian/house-quest/blob/master/LICENSE.md)
