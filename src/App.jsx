@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import PropertiesList from "./components/PropertiesList";
 import { Route, Switch } from "react-router-dom/cjs/react-router-dom";
 import "./App.css";
+import DetailView from "./components/DetailView";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         </Route>
         <Route exact path="/houses">
           <PropertiesList />
+        </Route>
+        <Route path={`/houses/:propertyId`}>
+          <DetailView />
         </Route>
       </Switch>
     </>
