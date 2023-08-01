@@ -1,14 +1,7 @@
 import PropertyCard from "./PropertyCard";
 import NavBar from "./NavBar";
 
-function PropertiesList() {
-  const house = {
-    id: 1,
-    house_type: "One Bedroom",
-    rent: 10000,
-    city: "Nairobi",
-    location: "Buruburu",
-  };
+function PropertiesList({ house }) {
   return (
     <>
       <NavBar />
