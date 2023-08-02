@@ -1,12 +1,19 @@
 import PropertyCard from "./PropertyCard";
 import NavBar from "./NavBar";
 
-function PropertiesList({ house }) {
+function PropertiesList({ properties }) {
   return (
     <>
       <NavBar />
-      <PropertyCard house={house} />
-      <p>Oh no😢! It seems there are no properties available at the moment.</p>
+      {properties.length === 0 ? (
+        <p>
+          Oh no😢! It seems there are no properties available at the moment.
+        </p>
+      ) : (
+        properties.map((property) => (
+          <PropertyCard key={property.id} property={property} />
+        ))
+      )}
     </>
   );
 }
