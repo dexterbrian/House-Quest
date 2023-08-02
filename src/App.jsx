@@ -3,21 +3,18 @@ import PropertiesList from "./components/PropertiesList";
 import { Route, Switch } from "react-router-dom/cjs/react-router-dom";
 import "./App.css";
 import DetailView from "./components/DetailView";
+import { useEffect, useState } from "react";
+import { baseUrl } from "./global_vars";
 
 function App() {
-  const house = {
-    id: 1,
-    house_type: "One Bedroom",
-    rent: 10000,
-    city: "Nairobi",
-    location: "Buruburu",
-    building: "Jimlizer Apartment",
-    floor: 2,
-    coordinates: "https://map.google.com/",
-    other_info: "24 hour security, water and parking available",
-    phone: "+254711223344",
-    owner: "Brian",
-  };
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    fetch(`${baseUrl}/properties`)
+      .then((response) => response.json())
+      .then((data) => setProperties(data));
+  }, []);
+
   return (
     <>
       <Switch>
@@ -25,10 +22,10 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/houses">
-          <PropertiesList house={house} />
+          <PropertiesList properties={properties} />
         </Route>
-        <Route path={`/houses/:propertyId`}>
-          <DetailView house={house} />
+        <Route path="/houses/:propertyId">
+          <DetailView properties={properties} />
         </Route>
       </Switch>
     </>
