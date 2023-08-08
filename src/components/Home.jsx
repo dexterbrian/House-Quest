@@ -13,7 +13,7 @@ function Home() {
       <h1>{appName}</h1>
       <h2>Curated Rental Houses in only a few Clicks</h2>
       <p className="read-the-docs">
-        Why waste hours walking around neighbourhoods, searching for a perfect
+        Why waste hours walking around neighbourhoods, searching for the perfect
         house when you can simply click Find a house on {appName}?
       </p>
       <div className="card">
