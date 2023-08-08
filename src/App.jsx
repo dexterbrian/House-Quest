@@ -2,7 +2,7 @@ import Home from "./components/Home";
 import PropertiesList from "./components/PropertiesList";
 import { Route, Switch } from "react-router-dom/cjs/react-router-dom";
 import "./App.css";
-import DetailView from "./components/DetailView";
+import PropertyDetails from "./components/PropertyDetails";
 import { useEffect, useState } from "react";
 import { baseUrl } from "./global_vars";
 
@@ -25,7 +25,7 @@ function App() {
           <PropertiesList properties={properties} />
         </Route>
         <Route path="/houses/:propertyId">
-          <DetailView properties={properties} />
+          <PropertyDetails />
         </Route>
       </Switch>
     </>
